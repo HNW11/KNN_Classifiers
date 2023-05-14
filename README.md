@@ -62,3 +62,24 @@ Train your classifier using the fit function. This function takes two parameters
 
 <h3>Step 11</h3>
 Now that the classifier has been trained, let’s find how accurate it is on the validation set. Call the classifier’s score function. score takes two parameters: the validation set and the validation labels. Print the result!
+
+<h3>Step 12</h3>
+The classifier does pretty well when k = 3. But maybe there’s a better k! Put the previous 3 lines of code inside a for loop. The loop should have a variable named k that starts at 1 and increases to 100. Rather than n_neighbors always being 3, it should be this new variable k.
+
+<h2>Graphing the Result</h2>
+
+<h3>Step 13</h3>
+We now have the validation accuracy for 100 different ks. Rather than just printing it out, let’s make a graph using matplotlib. Begin by importing matplotlib.pyplot as plt.
+
+<h3>Step 14</h3>
+The x-axis should be the values of k that we tested. This should be a list of numbers between 1 and 100. You can use the range function to make this list. Store it in a variable named k_list.
+
+<h3>Step 15</h3>
+The y-axis of our graph should be the validation accuracy. Instead of printing the validation accuracies, we want to add them to a list. Outside of the for loop, create an empty list named accuracies. Inside the for loop, instead of printing each accuracy, append it to accuracies.
+
+<h3>Step 16</h3>
+We can now plot our data! Call plt.plot(). The first parameter should be k_list and the second parameter should be accuracies.
+After plotting the graph, show it using plt.show().
+
+<h3>Step 17</h3>
+Let’s add some labels and a title. Set the x-axis label to "k" using plt.xlabel(). Set the y-axis label to "Validation Accuracy". Set the title to "Breast Cancer Classifier Accuracy".
