@@ -50,3 +50,15 @@ Let’s confirm that worked correctly. Print out the length of training_data and
 <h4>Both are 455 so this worked</h4>
 
 <h2>Run the Classifier</h2>
+
+<h3>Step 8</h3>
+Now that we’ve created training and validation sets, we can create a KNeighborsClassifier and test its accuracy. Begin by importing KNeighborsClassifier from sklearn.neighbors.
+
+<h3>Step 9</h3>
+Create a KNeighborsClassifier where n_neighbors = 3. Name the classifier classifier.
+
+<h3>Step 10</h3>
+Train your classifier using the fit function. This function takes two parameters: the training set and the training labels.
+
+<h3>Step 11</h3>
+Now that the classifier has been trained, let’s find how accurate it is on the validation set. Call the classifier’s score function. score takes two parameters: the validation set and the validation labels. Print the result!
